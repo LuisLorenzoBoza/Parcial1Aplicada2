@@ -7,27 +7,27 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class CuentasDeCartas
+    public class Destinatario
     {
         [Key]
-        public int CartaId { get; set; }
+        public int DestinatarioID { get; set; }
         public DateTime Fecha { get; set; }
         public string Nombre { get; set; }
-        public double Balance { get; set; }
+        public int CantidadCartas { get; set; }
 
-        public CuentasDeCartas(int cuentaId, DateTime fecha, string nombre)
+        public Destinatario(int destinatarioID, DateTime fecha, string nombre)
         {
-            CartaId = cuentaId;
+            DestinatarioID = destinatarioID;
             Fecha = fecha;
             Nombre = nombre;
         }
 
-        public CuentasDeCartas()
+        public Destinatario()
         {
-            CartaId = 0;
+            DestinatarioID = 0;
             Fecha = DateTime.Now;
             Nombre = String.Empty;
-            Balance = 0;
+            CantidadCartas = 0;
         }
     }
 }

@@ -10,7 +10,7 @@
 namespace Parcial1Aplicada2.Consultas {
     
     
-    public partial class cDepositos {
+    public partial class cCartas {
         
         /// <summary>
         /// FiltroLabel control.
@@ -58,12 +58,12 @@ namespace Parcial1Aplicada2.Consultas {
         protected global::System.Web.UI.WebControls.LinkButton BuscarLinkButton;
         
         /// <summary>
-        /// DepositoGridView control.
+        /// CartasGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView DepositoGridView;
+        protected global::System.Web.UI.WebControls.GridView CartasGridView;
     }
 }

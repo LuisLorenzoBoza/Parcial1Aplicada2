@@ -1,21 +1,20 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="cDepositos.aspx.cs" Inherits="Parcial1Aplicada2.Consultas.cDepositos" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="cCartas.aspx.cs" Inherits="Parcial1Aplicada2.Consultas.cCartas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    
-    <div class="row justify-content-center">
+      <div class="row justify-content-center">
         <div class="col-lg-4">
             <asp:Label ID="FiltroLabel" runat="server" Text="Filtrar-por">
                         Filtro:
             </asp:Label>
             <asp:DropDownList ID="FiltroDropDownList" CssClass="form-control" runat="server">
                 <asp:ListItem></asp:ListItem>
-                <asp:ListItem>DepositoId</asp:ListItem>
-                <asp:ListItem>CuentaId</asp:ListItem>
+                <asp:ListItem>CartaID</asp:ListItem>
+                <asp:ListItem>DestinatarioID</asp:ListItem>
                 <asp:ListItem>Fecha</asp:ListItem>
-                <asp:ListItem>Concepto</asp:ListItem>
-                <asp:ListItem>Cartas</asp:ListItem>
+                <asp:ListItem>Cuerpo</asp:ListItem>
+                <asp:ListItem>Cantidad</asp:ListItem>
             </asp:DropDownList>
         </div>
         <div class="col-lg-1"></div>
@@ -33,11 +32,11 @@
 
     <div class="row justify-content-center mt-3">
         <div class="col-lg-11">
-            <asp:GridView ID="DepositoGridView" runat="server" AllowPaging="true" PageSize="7" CssClass="table table-striped table-hover table-responsive-lg">
+            <asp:GridView ID="CartasGridView" runat="server" AllowPaging="true" PageSize="7" CssClass="table table-striped table-hover table-responsive-lg" OnSelectedIndexChanged="CartasGridView_SelectedIndexChanged">
                
             </asp:GridView>
         </div>
     </div>
-</asp:Content>
 
+</asp:Content>
 
