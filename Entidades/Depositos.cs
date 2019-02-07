@@ -28,7 +28,7 @@ namespace Entidades
 
         public Depositos()
         {
-            CartaId = 0;
+            DepositosId = 0;
             CuentaId = 0;
             Fecha = DateTime.Now;
             Concepto = String.Empty;

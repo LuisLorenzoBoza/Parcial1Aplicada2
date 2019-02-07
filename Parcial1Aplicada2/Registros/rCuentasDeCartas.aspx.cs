@@ -7,9 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace Parcial1Aplicada2.Registros
 {
-    public partial class rCartasEnviadas : System.Web.UI.Page
+    public partial class rCuentasDeCartas : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ButtonBuscar_Click(object sender, EventArgs e)
         {
 
         }
