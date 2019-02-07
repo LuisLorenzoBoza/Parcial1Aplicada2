@@ -13,7 +13,7 @@
                         <asp:ListItem>ID</asp:ListItem>
                         <asp:ListItem>Fecha</asp:ListItem>
                         <asp:ListItem>Nombre</asp:ListItem>
-                        <asp:ListItem>Balance</asp:ListItem>
+                        <asp:ListItem>CantidadCartas</asp:ListItem>
                     </asp:DropDownList>
                 </div>
                 <div class="col-lg-1"></div>
