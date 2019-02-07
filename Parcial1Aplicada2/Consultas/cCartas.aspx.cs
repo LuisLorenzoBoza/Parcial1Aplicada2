@@ -66,7 +66,7 @@ namespace Parcial1Aplicada2.Consultas
         {
             RepositorioBase<Cartas> rep = new RepositorioBase<Cartas>();
             CartasGridView.DataSource = rep.GetList(filter);
-            CartasGridView.PageIndex = e.NewPageIndex;
+            //CartasGridView.PageIndex = e.NewPageIndex;
             CartasGridView.DataBind();
         }
     }

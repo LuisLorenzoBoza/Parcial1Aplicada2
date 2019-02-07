@@ -56,7 +56,7 @@ namespace Parcial1Aplicada2.Consultas
         {
             RepositorioBase<Destinatario> rb = new RepositorioBase<Destinatario>();
             DestinatarioGridView.DataSource = rb.GetList(filtro);
-            DestinatarioGridView.PageIndex = e.NewPageIndex;
+            //DestinatarioGridView.PageIndex = e.NewPageIndex;
             DestinatarioGridView.DataBind();
         }
     }

@@ -42,7 +42,6 @@ namespace BL
 
             Destinatario cuenta = cartaAnterior.Destinatario;
             cuenta.CantidadCartas -= cartaAnterior.Cantidad;
-
             cuenta.CantidadCartas += entity.Cantidad;
             _contexto.Entry(cuenta).State = EntityState.Modified;
             _contexto.SaveChanges();
