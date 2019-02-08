@@ -11,7 +11,7 @@ namespace DAL
     public class Contexto : DbContext
     {
         public DbSet<Cartas> Carta { get; set; }
-        public DbSet<Destinatario> destinatarios { get; set; }
+        public DbSet<Destinatario> Destinatarios { get; set; }
 
         public Contexto() : base("ConStr")
         {

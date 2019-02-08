@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    [Serializable]
     public class Cartas
     {
         [Key]
@@ -15,7 +16,7 @@ namespace Entidades
         public int DestinatarioID { get; set; }
         public string Cuerpo { get; set; }
         public int Cantidad { get; set; }
-        public virtual Destinatario Destinatario { get; set; }
+        public virtual Destinatario Destinatario { get; set; } 
 
         public Cartas(int cartaID, DateTime fecha, int destinatarioID, string cuerpo, int cantidad)
         {
